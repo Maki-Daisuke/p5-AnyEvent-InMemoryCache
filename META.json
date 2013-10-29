@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Simple in-memory cache for AnyEvent applications",
    "author" : [
       "Daisuke (yet another) Maki <maki.daisuke@gmail.com>"
    ],
