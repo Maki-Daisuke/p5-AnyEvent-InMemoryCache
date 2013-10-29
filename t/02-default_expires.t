@@ -45,7 +45,7 @@ my $w1; $w1 = AE::timer 2, 0, sub{  # 2 seconds later
     is $cache->get("baz"), "piyo";
 };
 
-my $w1; $w1 = AE::timer 4, 0, sub{  # 4 seconds later
+my $w2; $w2 = AE::timer 4, 0, sub{  # 4 seconds later
     ok !$cache->exists("foo");
     
     ok $cache->exists("bar");
@@ -54,7 +54,7 @@ my $w1; $w1 = AE::timer 4, 0, sub{  # 4 seconds later
     ok !$cache->exists("baz");
 };
 
-my $w2; $w2 = AE::timer 5, 0, sub{  # 5 seconds later
+my $w3; $w3 = AE::timer 5, 0, sub{  # 5 seconds later
     ok !$cache->exists("foo");
     
     ok !$cache->exists("bar");

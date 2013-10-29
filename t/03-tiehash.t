@@ -66,7 +66,7 @@ my $w1; $w1 = AE::timer 2, 0, sub{  # 2 seconds later
     ok !exists $cache{"baz"};
 };
 
-my $w1; $w1 = AE::timer 4, 0, sub{  # 4 seconds later
+my $w2; $w2 = AE::timer 4, 0, sub{  # 4 seconds later
     is scalar keys %cache, 0;
     is_deeply [sort keys %cache], [];
     is "" . %cache, "0";
