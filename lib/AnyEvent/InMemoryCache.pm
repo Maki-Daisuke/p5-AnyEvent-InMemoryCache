@@ -52,11 +52,11 @@ sub delete {
 
 # Tie-hash subroutines
 
-*TIEHANDLE = \&new;
-*FETCH     = \&get;
-*STORE     = \&set;
-*DELETE    = \&delete;
-*EXISTS    = \&exists;
+*TIEHASH = \&new;
+*FETCH   = \&get;
+*STORE   = \&set;
+*DELETE  = \&delete;
+*EXISTS  = \&exists;
 
 sub CLEAR {
     %{$_[0]->{_datastore}} = ();
@@ -73,7 +73,7 @@ sub NEXTKEY {
 }
 
 sub SCALAR {
-    scalar $_[0]->{_datastore};
+    scalar %{$_[0]->{_datastore}};
 }
 
 
