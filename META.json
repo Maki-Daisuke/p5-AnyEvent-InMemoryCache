@@ -55,5 +55,15 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/Maki-Daisuke/p5-AnyEvent-InMemoryCache/issues"
+      },
+      "homepage" : "https://github.com/Maki-Daisuke/p5-AnyEvent-InMemoryCache",
+      "repository" : {
+         "url" : "https://github.com/Maki-Daisuke/p5-AnyEvent-InMemoryCache",
+         "web" : "https://github.com/Maki-Daisuke/p5-AnyEvent-InMemoryCache"
+      }
+   },
    "version" : "0.01"
 }

@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Maki-Daisuke/p5-AnyEvent-InMemoryCache.png?branch=master)](https://travis-ci.org/Maki-Daisuke/p5-AnyEvent-InMemoryCache)
 # NAME
 
 AnyEvent::InMemoryCache - Simple in-memory cache for AnyEvent applications
